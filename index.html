@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  
+  </head>
+  <body>
+    
+<div class=Calculator>
+      <h1 class="title">Calculator</h1>
+     <br>
+      <input readonly id="display" placeholder="0">
+    <hr>
+    <div id=buttons>
+      <button class="operators" onclick="allClear()">AC</button>
+      <button class="operators" onclick="appendToDisplay('**')">^</button>
+      <button class="operators" onclick="appendToDisplay('%')">%</button>
+      <button class="operators" onclick="appendToDisplay('/')">÷</button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button class="operators" onclick="appendToDisplay('*')">×</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button class="operators" onclick="appendToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button class="operators" onclick="appendToDisplay('+')">+</button>
+      <button class="operators"><a href="https://engineermayur.blogspot.com/?m=1" target="_blank">MTJ</a></button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button id="equal" class="operators" onclick="calculate()">=</button>
+    
+    </div>
+    <footer>
+      <p>&copy;M.B.Gund</p>
+    </footer>
+</div>
+      <script src="script.js"></script>
+  </body>
+</html>
